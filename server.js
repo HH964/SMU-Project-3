@@ -1,19 +1,33 @@
 const express = require("express");
-// const connectDB = require("./config/db");
-const routes = require("./routes/index.js"); 
-
+const mongoose = require("mongoose");
+const bodyParser = require("body-parser")
+// const routes = require("./routes/index.js"); 
 
 const PORT = process.env.PORT || 5000;
 const app = express();
+const items = require('./routes/api/items');
 
-//connecting Database
-// connectDB();
+//db config
+const db = require('./config/keys').mongoURI;
+
+//connect to mongo
+mongoose
+.connect(db)
+.then(()=> console.log("MongoDB connected......"))
+.catch(err=> console.log(err))
+
+//Bodyparser Middle
+app.use(bodyParser.json());
+
 
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-app.use(routes);
+//use routes
+// app.use(routes);
+app.use('api/items', items);
+
 
 app.listen(PORT, ()=>
     console.log(`Server started on http://localhost:${PORT}`
