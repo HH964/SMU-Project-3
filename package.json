@@ -5,6 +5,7 @@
   "main": "server.js",
   "dependencies": {
     "axios": "^0.18.0",
+    "body-parser": "^1.19.0",
     "express": "^4.16.3",
     "mongoose": "^5.3.16"
   },
@@ -20,7 +21,8 @@
     "seed": "node scripts/seedDB.js",
     "install": "cd client && npm install",
     "build": "cd client && npm run build",
-    "heroku-postbuild": "npm run build"
+    "heroku-postbuild": "npm run build",
+    "server": "nodemon server.js"
   },
   "repository": {
     "type": "git",
