@@ -26,7 +26,7 @@ app.use(express.json());
 
 //use routes
 // app.use(routes);
-app.use('api/items', items);
+app.use('/api/items', items);
 
 
 app.listen(PORT, ()=>
