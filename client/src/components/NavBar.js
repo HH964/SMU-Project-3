@@ -2,18 +2,18 @@ import React from "react";
 
 const NavBar = () => {
     return (
-        <div class="navbar-fixed">
-            <nav class="black">
-                <div class="nav-wrapper">
-                    <div class="container">
-                        <a href="#" class="brand-logo center">
+        <div className="navbar-fixed">
+            <nav className="black">
+                <div className="nav-wrapper">
+                    <div className="container">
+                        <a href="#" className="brand-logo center">
                             Logo
             </a>
-                        <ul id="nav-mobile" class="right hide-on-small-and-down">
+                        <ul id="nav-mobile" className="right hide-on-small-and-down">
                             <li>
                                 <a href="#">Home</a>
                             </li>
-                            <li class="active">
+                            <li className="active">
                                 <a href="#">About</a>
                             </li>
                             <li>
