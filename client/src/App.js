@@ -6,14 +6,29 @@ import ProductCard from "./components/Products";
 
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      products: []
+    }
+  }
+
+  componentDidMount() {
+    fetch("/api/items").then(res => res.json())
+    .then( data => {
+      console.log(this.setState({
+        products: data
+      }))
+    })
+  }
+  
   render() {
     return <div>
       <NavBar/>
       <div className="containter row">
-      <ProductCard productName= "Tent"/>
-      <ProductCard productName= "Pole"/>
-      <ProductCard productName= "Gun"/>
-
+      {this.state.products.map(ele => {
+        return <ProductCard productName={ele.name} />
+      })}
       </div>
     </div>
 
