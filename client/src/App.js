@@ -1,43 +1,21 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import 'materialize-css/dist/css/materialize.min.css';
-import NavBar from "./components/NavBar";
-import ProductCard from "./components/Products";
-import VideoHeader from './components/videoHeader';
-import Image from './rainforest.jpg';
+
+import Home from './pages/Home';
+import About from './pages/About';
+import ProductsPage from './pages/ProductsPage';
 
 
-class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      products: []
-    }
-  }
+function App() {
+  return (
+    <Router>
+        <Route exact path="/" component={Home} />
+        <Route path="/about" component={About} />
+        <Route path="/products" component={ProductsPage} />
 
-  componentDidMount() {
-    fetch("/api/items").then(res => res.json())
-    .then( data => {
-      console.log(this.setState({
-        products: data
-      }))
-    })
-  }
-  
-  render() {
-    return <div>
-      <NavBar/>
-      <video autoPlay loop id="bgvid" src="/assets/video/camping.mp4" type="video/mp4" />
-{/* 
-      <div className="containter row">
-
-      {this.state.products.map(ele => {
-        return <ProductCard productName={ele.name} />
-      })}
-      </div>
-
-    </div>
-
-  }
+    </Router>
+  );
 }
 
 export default App;
