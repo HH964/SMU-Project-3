@@ -1,0 +1,9 @@
+body {
+  background: url('../images/rainforest.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  min-height: 600px;
+  color: #fff;
+  position: relative;
+}
