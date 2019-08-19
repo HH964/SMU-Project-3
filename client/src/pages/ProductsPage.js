@@ -1,5 +1,5 @@
 import React from 'react';
-import data from "./data.json";
+// import data from "./data.json";
 import NavBar from "../components/NavBar";
 
 import ProductCard from "../components/Products";
@@ -7,17 +7,21 @@ import ProductCard from "../components/Products";
 
 
 class ProductsPage extends React.Component {
-state ={
-    displayImg: data
-}
+  constructor(props) {
+    super(props)
+    this.state = {
+      displayImg: []
+    }
+    fetch("/api/items").then(res => res.json()).then(data => this.setState({displayImg: data}));
+  }
 
   render() {
     return (
       <div>
-                <NavBar />
+        <NavBar />
 
         {this.state.displayImg.map(ele =>
-        <ProductCard data={ele}/>
+          <ProductCard data={ele} />
 
         )}
       </div>

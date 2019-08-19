@@ -7,14 +7,17 @@ import './home.css';
 
 function Home() {
   return (
+
     <div class="bg">
+
       <NavBar />
       <div id='title'>
         <div>Your Online Basecamp</div>
       </div>
       <video
+      loop
         autoPlay
-        loop
+        
         id="bgvid"
         src="/assets/video/camping.mp4"
         type="video/mp4"
