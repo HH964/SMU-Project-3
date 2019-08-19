@@ -7,11 +7,13 @@ import './home.css';
 
 function Home() {
   return (
+    //does not start vidoe on chrome when 1st load pages happens
     <div>
       <NavBar />
       <video
+      loop
         autoPlay
-        loop
+        
         id="bgvid"
         src="/assets/video/camping.mp4"
         type="video/mp4"
