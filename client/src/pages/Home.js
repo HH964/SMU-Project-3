@@ -1,7 +1,7 @@
 import React from 'react';
 import NavBar from '../components/NavBar';
 import 'materialize-css/dist/css/materialize.min.css';
-// import Background from '../images/rainforest.jpg';
+import Background from '../images/rainforest.jpg';
 
 import './home.css';
 
@@ -23,14 +23,57 @@ function Home() {
         type="video/mp4"
       />
       <div id="starlord">
-        <div id='stars'></div>
-        <div id='stars2'></div>
-        <div id='stars3'></div>
-
+        <div class='stars'></div>
+        <div class='stars2'></div>
+        <div class='stars3'></div>
       </div>
       {/* <div className='bkgrdImage'>
       </div> */}
-      
+      <div className="container text-center mt-2 mb-5">
+        <h3 className="heading"><font color="white">Take care of Yourself and the Planet</font></h3>
+      </div>
+
+      <div class="row">
+
+        <div class="col s12 m1"></div>
+        <div class="col s12 m3">
+          <div class="card">
+            <div class="card-image">
+              <img src={Background} />
+                <span class="card-title">Card Title</span>
+              </div>
+              <div class="card-content">
+                <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+              </div>
+            </div>
+          </div>
+
+        <div class="col s12 m3">
+          <div class="card">
+            <div class="card-image">
+              <img src={Background} />
+              <span class="card-title">Card Title</span>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col s12 m3">
+          <div class="card">
+            <div class="card-image">
+              <img src={Background} />
+              <span class="card-title">Card Title</span>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m1"></div>
+        </div>
+
       </div>
       );
     }
