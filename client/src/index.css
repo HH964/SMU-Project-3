@@ -13,10 +13,3 @@ code {
     monospace;
 }
 
-#bgvid {
-  width: 110%;
-  height: 70%;
-  position: absolute;
-  margin-top: 70px;
-  margin-left: 130px;
-}

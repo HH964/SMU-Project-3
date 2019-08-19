@@ -7,9 +7,13 @@ import './home.css';
 
 function Home() {
   return (
-    //does not start vidoe on chrome when 1st load pages happens
-    <div>
+
+    <div class="bg">
+
       <NavBar />
+      <div id='title'>
+        <div>Your Online Basecamp</div>
+      </div>
       <video
       loop
         autoPlay
@@ -18,8 +22,17 @@ function Home() {
         src="/assets/video/camping.mp4"
         type="video/mp4"
       />
-    </div>
-  );
-}
+      <div id="starlord">
+        <div id='stars'></div>
+        <div id='stars2'></div>
+        <div id='stars3'></div>
 
-export default Home;
+      </div>
+      {/* <div className='bkgrdImage'>
+      </div> */}
+      
+      </div>
+      );
+    }
+    
+    export default Home;
