@@ -1,0 +1,35 @@
+h1 {
+    color: white;
+    font-size: 85px;
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+    text-shadow: 12px 12px 5px rgb(48, 46, 46);
+
+}
+
+h4{
+    font-size: 55px;
+    color: white;
+    align-content: center;
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+    text-shadow: 12px 12px 5px rgb(48, 46, 46);
+}
+
+#h2 {
+    font-size: 25px;
+    color: rgb(233, 223, 211);
+    align-content: center;
+    text-align: center;
+    box-shadow: 12px 12px 5px rgb(48, 46, 46);
+    font-family: 'Raleway', sans-serif;
+}
+
+p {
+    color: rgb(46, 50, 54);
+}
+
+.bkgrdImage {
+    background: url('../images/rainforest.jpg');
+    /* background-repeat: no-repeat; */
+}  
