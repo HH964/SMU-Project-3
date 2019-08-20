@@ -5,6 +5,7 @@ import 'materialize-css/dist/css/materialize.min.css';
 import Home from './pages/Home';
 import About from './pages/About';
 import ProductsPage from './pages/ProductsPage';
+import Login from './pages/Logins';
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
         <Route exact path="/" component={Home} />
         <Route path="/about" component={About} />
         <Route path="/products" component={ProductsPage} />
+        <Route path="/login" component={Login} />
 
     </Router>
   );

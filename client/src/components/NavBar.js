@@ -1,9 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-
 const NavBar = () => {
-return (
+  return (
     <div className="navbar-fixed">
       <nav className="transparent">
         <div className="nav-wrapper">
@@ -20,6 +19,11 @@ return (
               <li>
                 <Link to="/products" className="nav">
                   Products
+                </Link>
+              </li>
+              <li>
+                <Link to="/login" className="nav">
+                  Login
                 </Link>
               </li>
             </ul>
