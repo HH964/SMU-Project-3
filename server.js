@@ -28,7 +28,7 @@ app.use(express.json());
 //use routes
 // app.use(routes);
 app.use('/api/items', items);
-app.use('/api/user', user);
+app.use(user);
 
 app.listen(PORT, ()=>
     console.log(`Server started on http://localhost:${PORT}`
