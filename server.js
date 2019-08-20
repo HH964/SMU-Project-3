@@ -6,6 +6,7 @@ const bodyParser = require("body-parser")
 const PORT = process.env.PORT || 5000;
 const app = express();
 const items = require('./routes/api/items');
+const user =  require("./routes/api/user");
 
 //db config
 const db = require('./config/keys').mongoURI;
@@ -27,7 +28,7 @@ app.use(express.json());
 //use routes
 // app.use(routes);
 app.use('/api/items', items);
-
+app.use('/api/user', user);
 
 app.listen(PORT, ()=>
     console.log(`Server started on http://localhost:${PORT}`
