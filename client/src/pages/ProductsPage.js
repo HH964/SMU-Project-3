@@ -20,10 +20,13 @@ class ProductsPage extends React.Component {
       <div>
         <NavBar />
 
-        {this.state.displayImg.map(ele =>
-          <ProductCard data={ele} />
+        <div className="row">
+          {this.state.displayImg.map(ele =>
+            <ProductCard data={ele} />
 
-        )}
+          )}
+        </div>
+
       </div>
     )
   }
