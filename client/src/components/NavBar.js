@@ -8,6 +8,7 @@ return (
       <nav className="transparent">
         <div className="nav-wrapper">
           <div className="container">
+          <img src="/assets/images/SelvaSuppliesInvert.png" style={{width: "40px"}}/>
             <ul id="nav-mobile" className="right hide-on-small-and-down">
               <li>
                 <Link to="/">Home</Link>
