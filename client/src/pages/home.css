@@ -26,8 +26,32 @@ div.row {margin-bottom:0px;}
   height: 65%;
   position: absolute;
   margin-top: 70px;
-  margin-left: 10px;
+  margin-left: 25px;
   z-index: 1;
+}
+
+#logo {
+  margin-left:60%;
+  margin-top: 30px;
+  position: absolute;
+  background-color: transparent;
+  height: 50px;
+  z-index: 1;
+}
+
+#logo img {
+  height: 350px;
+}
+
+#title {
+  position: absolute;
+  margin-top: 300px;
+  margin-left: 630px;
+  font-size:85px;
+  color: #FFF;
+  text-align: center;
+  font-family: 'Amatic SC', cursive;
+  z-index: 2;
 }
 
 #starlord {
@@ -38,17 +62,6 @@ div.row {margin-bottom:0px;}
   padding-bottom:100px;
   z-index: -1;
 }
-#title {
-  position: absolute;
-  margin-top: 250px;
-  margin-left: 650px;
-  font-size:85px;
-  color: #FFF;
-  text-align: center;
-  font-family: 'Amatic SC', cursive;
-  z-index: 2;
-}
-
 .heading {
   font-family: 'Amatic SC', cursive;
   font-size:65px;

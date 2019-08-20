@@ -1,7 +1,6 @@
 import React from 'react';
 import NavBar from '../components/NavBar';
 import 'materialize-css/dist/css/materialize.min.css';
-import Background from '../images/rainforest.jpg';
 
 import './home.css';
 
@@ -11,6 +10,9 @@ function Home() {
     <div class="bg">
 
       <NavBar />
+      <div id="logo">        
+      <img src="/assets/images/SelvaSupplies.png" alt="logo" />       
+</div>
       <div id='title'>
         <div>Your Online Basecamp</div>
       </div>
@@ -27,8 +29,7 @@ function Home() {
         <div class='stars2'></div>
         <div class='stars3'></div>
       </div>
-      {/* <div className='bkgrdImage'>
-      </div> */}
+
       <div className="container text-center mt-2 mb-5">
         <h3 className="heading"><font color="white">Take care of Yourself and the Planet</font></h3>
       </div>
@@ -39,7 +40,7 @@ function Home() {
         <div class="col s12 m3">
           <div class="card">
             <div class="card-image">
-              <img src={Background} />
+              {/* <img src /> */}
                 <span class="card-title">Card Title</span>
               </div>
               <div class="card-content">
@@ -51,7 +52,7 @@ function Home() {
         <div class="col s12 m3">
           <div class="card">
             <div class="card-image">
-              <img src={Background} />
+              {/* <img src={Background} /> */}
               <span class="card-title">Card Title</span>
             </div>
             <div class="card-content">
@@ -63,7 +64,7 @@ function Home() {
         <div class="col s12 m3">
           <div class="card">
             <div class="card-image">
-              <img src={Background} />
+              {/* <img src={Background} /> */}
               <span class="card-title">Card Title</span>
             </div>
             <div class="card-content">
