@@ -2,14 +2,18 @@ import React from "react";
 import NavBar from "../components/NavBar";
 import ParkCard from "../components/ParkCard";
 
+
 // import Background from "/assets/images/rainforest.jpg";
+
 
 import './about.css';
 
 function About() {
     var sectionStyle = {
         backgroundImage: `url("/assets/images/rainforest.jpg")`
+
     };
+
     return(
         <div style={ sectionStyle }>
             <NavBar />
