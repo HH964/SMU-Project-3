@@ -10,7 +10,7 @@ router.post("/", (req,res) => {
       password: req.body.password,
     }
     //use schema.create to insert data into the db
-    User.create(userData, function (err, user) {
+    User.create(userData, (err, user) => {
       if (err) {
         return res.json(err)
       } else {
@@ -24,5 +24,20 @@ router.get('/', (req,res) => {
   User.find()
   .then(user => res.json(user))
 });
+
+
+
+router.post("/login", (req,res) => {
+  const { email, password} = req.body;
+  User.findOne({email}).then((user => {
+    if (password !== user.password){
+      res.send("Try Again")
+    }
+    else{ 
+      res.json(user)
+    }
+  }
+    )
+)});
 
 module.exports = router;
