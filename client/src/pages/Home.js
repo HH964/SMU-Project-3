@@ -68,7 +68,7 @@ function Home() {
               <span class="card-title">Spirit</span>
             </div>
             <div class="card-content">
-              <p>When you go camping, don't forget to turn off your cell phone. Leave the tablet and the laptop computer at home. Try to disconnect for a few days and enjoy the simplicity of the natural experience. This isn't just a general tip to help you enjoy the experience; if you're willing to enjoy your surroundings without any outside distractions, you could increase your lifespan. Jon Kabat-Zinn, founder of the Mindfulness-Based Stress Reduction Program, believes that turning off the cell phone and engaging with nature is one of the simplest ways to get the health benefits of meditation.</p>
+              <p>When you go camping, don't forget to turn off your cell phone. Leave the tablet and the laptop computer at home. Try to disconnect for a few days and enjoy the simplicity of the natural experience. This isn't just a general tip to help you enjoy the experience; if you're willing to enjoy your surroundings without any outside distractions, you could increase your lifespan. </p>
             </div>
           </div>
         </div>
