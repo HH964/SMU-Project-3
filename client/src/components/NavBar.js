@@ -27,6 +27,11 @@ const NavBar = () => {
                   Login
                 </Link>
               </li>
+              <li>
+                <Link to="/cart" className="nav">
+                  <i className="fas fa-shopping-cart"></i>
+                </Link>
+                </li>
             </ul>
           </div>
         </div>

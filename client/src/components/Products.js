@@ -16,14 +16,12 @@ const ProductCard = props => {
         </div>
         <div class="card-action">
           <a >{props.data.price}</a>
+          <button>Add to Cart <i className="fas fa-shopping-cart"></i></button>
+         
         </div>
       </div>
     </span>
   );
 };
-
-
-
-
 
 export default ProductCard;

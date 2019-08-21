@@ -1,8 +1,6 @@
 import React from "react";
 import NavBar from "../components/NavBar";
 import ParkCard from "../components/ParkCard";
-
-
 // import Background from "/assets/images/rainforest.jpg";
 
 
@@ -15,9 +13,10 @@ function About() {
     };
 
     return(
+
         <div style={ sectionStyle }>
             <NavBar />
-        
+             
             
             <h1>Selva Supplies Mission Statement</h1>
 
