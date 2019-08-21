@@ -33,7 +33,8 @@ function Home() {
       <div className="container text-center mt-2 mb-5">
         <h3 className="heading"><font color="white">Take care of Yourself and the Planet</font></h3>
       </div>
-
+        <br></br>
+        <br></br>
       <div class="row">
 
         <div class="col s12 m1"></div>
