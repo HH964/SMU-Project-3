@@ -2,9 +2,16 @@ import React from 'react';
 import 'materialize-css'; // It installs the JS asset only
 import 'materialize-css/dist/css/materialize.min.css';
 
+
 const ProductCard = props => {
+
+  function buttonClick(event){
+    event.preventDefault();
+    // console.log("this was clicked");
+  }
+
   return (
-    <span className="col s4">
+    <span  onClick={buttonClick} className="col s4">
       <div className="card medium blue-grey darken-1">
         <div className="card-content white-text">
           <span className="card-title" style={{border:"4px"}}>{props.data.name}</span>
