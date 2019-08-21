@@ -28,7 +28,7 @@ function About() {
                 for any recreational activities you have in mind.  
                   
             </div>
-            <h4>Recomended Campgrounds:</h4>
+            <h4>Recommended Campgrounds:</h4>
             
                 <ParkCard />
         </div>

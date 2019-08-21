@@ -2,34 +2,53 @@ import React from "react";
 import NavBar from "../components/NavBar";
 import ParkCard from "../components/ParkCard";
 import './cart.css';
+import ProductCard from "../components/Products";
 
-
-function Cart() {
-    var sectionStyle = {
+class Cart extends React.Component {
+    constructor(props) {
+        super(props)
+        this.state = {
+            displayImg: []
+        }
+        fetch("/api/items").then(res => res.json()).then(data => {
+            for (let i = 0; i < 3; i++) {
+                this.setState({displayImg: [...this.state.displayImg, data[i]]})
+                console.log(this.state.displayImg)
+            }
+        });
+    }    
+    
+    sectionStyle = {
         backgroundImage: `url("/assets/images/rainforest.jpg")`
 
     };
 
+    render() {
     return (
-        <div style={sectionStyle}>
+        <div style={this.sectionStyle}>
             <NavBar />
 
 
             <h1>Your cart:</h1>
 
 
-            <div id="h2" className="container blue-grey darken-1">Our mission at Selva is to show people how easy it is to enjoy the
-                great outdoors. The translation of the word Selva actually means forest.
-                If you are a begginer or even an advanced camper, we aim to help all our
-                fellow campers with the essential gear they will need, as well as supplies
-                for any recreational activities you have in mind.
+            <br />
+            <br />
+            <br />
+            <br />
 
+            <div className="row">
+                {this.state.displayImg.map(ele =>
+                    <ProductCard data={ele} />
+
+                )}
             </div>
-
     
         </div>
-    )
+    )}
 
 }
+
+
 
 export default Cart;

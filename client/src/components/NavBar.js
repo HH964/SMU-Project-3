@@ -7,7 +7,7 @@ const NavBar = () => {
       <nav className="transparent">
         <div className="nav-wrapper">
           <div className="container">
-          <img src="/assets/images/SelvaSuppliesInvert.png" style={{width: "40px"}}/>
+          <img src="/assets/images/SelvaSuppliesLogo.png" style={{width: "150px"}}/>
             <ul id="nav-mobile" className="right hide-on-small-and-down">
               <li>
                 <Link to="/">Home</Link>
